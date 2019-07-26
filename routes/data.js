@@ -1,4 +1,5 @@
 var express = require('express');
+var request = require('request');
 
 //This file pvar request = require('request'); // require in request
 var initGet = { uri: 'https://gopuff-public.s3.amazonaws.com/dev-assignments/product/order.json' };
