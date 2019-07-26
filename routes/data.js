@@ -12,8 +12,9 @@ var apiCaller = function (url, cb) {
         json: true
     }, function (error, response, body) {
 
-        if (!error && response.statusCode === 200) {
-            cb(body);// Send body/response to callback
+            if (!error && response.statusCode === 200) { 
+
+                cb(body);// Send body/response to callback
         }
     })
 };
