@@ -8,6 +8,7 @@ router.get('/', function (req, res, next) {
     //call the api apiGet and create callback function
     data.apiGet(function (data) {
         // render to the index.jade and pass the data from api call
+       
         res.render('index', { result: data, title: "Dahlia's Shopping Cart" });
     });
 });
