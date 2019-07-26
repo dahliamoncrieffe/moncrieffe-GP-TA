@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title}, #{user}
+
+  h2 Item's
+  .ui
+    for data in result //iterate through the results
+      .ui_box
+        .ui_box__inner
+          .event
+            span #{data.user.first_name} // here pick out the jSON you require
+          .name
+            span #{data.payment_method}
